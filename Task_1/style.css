@@ -56,17 +56,7 @@ nav {
   letter-spacing: 1px;
   color: whitesmoke;
 }
-.menu-icon{
-  position: absolute;
-  font-size: 2.8rem;
-  color: rgb(0, 106, 78) ;
-  cursor: pointer;
-  display: none;
-  right: 5%;
-}
-#check{
-  display: none;
-}
+
 
 .menu a {
   text-decoration: none;
@@ -256,46 +246,27 @@ ul {
    -webkit-box-orient: vertical;
   }
   .right img{
-    width: 80%;
-    height:80%;
-  }
-  .menu-icon {
-    display: inline-flex;
-
-  }
-  #check:checked~.menu-icon #main-icon{
-    display: none;
-  }
-  .menu-icon #close-icon{
-    display: none;
-  }
-  #check:checked~.menu-icon #close-icon{
-    display: block;
+    margin-top: 40px;
+    width: 70%;
+    height:70%;
   }
 
-
-.menu{
-    position: absolute;
-    top: 20%;
-    left: 0;
-    width: 100%;
-    background:white;
+  .menu a {
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 10px 0px 10px 0px;
+   
+  }
+  .logo {
+    font-size: 28px;
+  }
+  .left button {
+    margin-top: 5px;
+  }
   
-    
-
-  }
-  #check:checked~.menu{
-    height: 10rem;
-  }
-  .menu a{
-    display: block;
-    font-size: 1.1rem;
-    margin:1.5rem 0;
-    text-align: center;
-
-
-  }
  
+  
+  
 }
 
 @media(max-width:992px) {
