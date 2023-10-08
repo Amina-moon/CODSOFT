@@ -10,6 +10,10 @@ header {
   background:black; 
   color:dodgerblue
 }
+.logo img{
+  width: 150px;
+  height: 150px;
+}
 
 .top-navigation {
   width: 100%;
@@ -40,11 +44,11 @@ nav {
 }
 
 .nav a:first-child {
-  background: rgb(0,139,139);
+  background: rgb(0,191,255);
   color: white;
 }
 .nav a:hover {
-  background: rgb(0,139,139);
+  background: rgb(0,191,255);
   color: antiquewhite;
 }
 
@@ -52,12 +56,22 @@ nav {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 10px 40px;
+  justify-content: center;
+  padding:20px 100px;
+  align-items: flex-start;
 }
+.icons i {
+  padding: 20px;
+  font-size: 22px;
+}
+
 
 .left {
   flex-basis: 50%;
+  text-align: center;
+  margin-top: 90px;
+  
+ 
 }
 
 .right {
@@ -66,8 +80,287 @@ nav {
 }
 
 .left h2 {
-  font-size: 3rem;
+  font-size: 2rem;
   color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.left p{
+  font-size: 1.1rem;
+  font-family: Bona nova;
+  
+}
+.main {
+  padding: 70px 0;
+  background:black;
+}
+
+.main-container {
+  max-width: 1170px;
+  margin: auto;
+
+
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-col {
+  width: 25%;
+  padding: 0 15px;
 }
 
 
+
+.main-col h4 {
+  font-size: 34px;
+  color: white;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  margin-left: 300px;
+}
+
+
+.main-col .skill {
+  margin-left: 90px;
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+
+  .main-col .skill a {
+    display: inline-block;
+    height: 40px;
+    width: 60px;
+    background-color: rgba(255, 255, 255, 0.2);
+    text-align: center;
+    line-height: 40px;
+    border-radius: 60%;
+    color: dodgerblue;
+    margin-bottom: 15px; 
+    
+  }
+
+
+.main-col .skill a:hover {
+  color: black;
+  padding-left: 8px;
+}
+.bar{
+  margin-bottom: 10px;
+  background: #353b48;
+  display: block;
+  height: 25px;
+  width: 500px;
+  border: 1px solid white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12),0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,8,.25,1);
+}
+.bar:hover{
+  box-shadow: 0 14px 14px  rgb(0,73,83),0 10px 10px rgba(223, 102, 102, 0.22);
+}
+.bar span{
+  height: 20px;
+  float: left;
+  background: linear-gradient(135deg,rgba(0,114,187,1)0%,rgba(135,206,250,1)100%);
+}
+.python{
+  width: 60%;
+  animation: python 3s;
+}
+.css{
+  width: 80%;
+  animation: css 3s;
+}
+.html{
+  width: 80%;
+  animation: html 3s;
+}
+.javascript{
+  width: 50%;
+  animation: javascript 3s;
+}
+.react{
+  width: 60%;
+  animation: react 3s;
+}
+.projects {
+  padding: 50px 0;
+  background: black;
+  color: white;
+}
+
+.projects-container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.projects h2 {
+  font-size: 38px;
+  margin-bottom: 20px;
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.project-image {
+  flex: 0 0 200px; 
+  margin-right: 80px;
+}
+
+.project-details {
+  flex: 1;
+}
+
+.project img {
+  max-width: 100%;
+  height: auto;
+}
+
+.project h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: dodgerblue;
+}
+
+.project p {
+  font-size: 16px;
+}
+.project a{
+  color: dodgerblue;
+}
+.contact {
+  padding: 50px 0;
+  background:black;
+  color: white;
+}
+
+.contact-container {
+  max-width: 1170px;
+  margin: auto;
+
+
+}
+.contact-col {
+  width: 100%;
+  padding: 0 15px;
+}
+
+ul {
+  list-style: none;
+}
+
+.contact-col h4 {
+  font-size: 25px;
+  color: white;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.contact-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.contact-col ul li  {
+  font-size: 18px;
+  text-transform: capitalize;
+  color:white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  display: block;
+
+}
+
+.contact-col ul li a:hover {
+  color: dodgerblue;
+  padding-left: 8px;
+}
+
+.contact .social-link a {
+  display: block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0px 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: white;
+}
+
+ .footer-col .social-link a:hover {
+  color: black;
+  padding-left: 8px;
+}
+ footer {
+  background: dodgerblue;
+  padding: 20px 0;
+}
+
+.footer-container {
+  max-width: 1170px;
+  margin: auto;
+  text-align: center;
+}
+
+.footer-container p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+@media(max-width:768px) {
+ .nav a {
+    text-decoration: none;
+    color: dodgerblue;
+    font-size: 16px;
+    padding: 3px 15px;
+    font-weight: bold;
+    border-radius: 20px ;
+  
+  }
+  .container {
+    padding:2px 50px;
+  }
+  .main-col .skill {
+    margin-left: 10px;
+  }
+  .logo img{
+    width: 100px;
+    height: 100px;
+  }
+  .top-navigation {
+    font-size: 24px;
+  }
+ 
+ 
+}
+
+@media(max-width:992px) {
+  .footer-col {
+    width: 100%;
+
+  }
+  .left h1{
+    font-size: 32px;
+  }
+  .left p{
+   overflow: hidden;
+   -webkit-line-clamp: 12;
+   display: -webkit-box;
+   -webkit-box-orient: vertical;
+  }
+  .right img{
+    width: 100%;
+    
+  }
+  
+  
+}
